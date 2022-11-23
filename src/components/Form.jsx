@@ -1,9 +1,15 @@
-import React from 'react'
-import logo from '../logo.png';
-import busqueda from '../busqueda.png'; 
+import React, {useHistory,Route,Router} from 'react'
+import logo from '../assets/img/logo.png';
+import busqueda from '../assets/img/busqueda.png'; 
+import mapa from '../assets/img/marcador-de-mapa.png';
 import'../assets/App.css';
+import Nosotros from './Nosotros';  
+
 
 function Form() {
+    const history=useHistory();
+
+       const cambioRuta=()=>history.push(Nosotros)
   return (
       <body>
     <header>
@@ -27,7 +33,7 @@ function Form() {
         <div className="list"><li>|</li></div>
         <div className="listI"><a href="" className="a">Categorias</a></div>
         <div className="list"><li>|</li></div>
-        <div className="listI"><a href="" className="a">Nosotros</a></div>
+        <button type='button' onClick={cambioRuta}> nosotros</button>
 
     </div>
     <main>
@@ -40,8 +46,7 @@ function Form() {
 
     <section className="info">
         <div className="hijo">
-            <img className="imagen" src="/img/marcador-de-mapa.png"/>
-            <p className="parrafo"> Envios a toda la ciudad</p>
+            <img className="imagen" src={mapa}/>           <p className="parrafo"> Envios a toda la ciudad</p>
         </div>
         <div><li className="als">|</li></div>
 

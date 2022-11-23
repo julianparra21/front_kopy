@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -134,7 +136,7 @@ a:hover{
 }
 
 .fondo-rosa{
-  background: url();
+  background: url(../assets/img/caferosasi.jpg);
   background-repeat: no-repeat;
   width:100%;
   height:50vh;
@@ -316,7 +318,7 @@ h3{
 
 
 .seccion{
-  background: url();
+  background: url(../assets/img/caferosaotro.jpg);
   height: 300px;
 }
 
