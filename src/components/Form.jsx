@@ -1,15 +1,19 @@
-import React, {useHistory,Route,Router} from 'react'
+import React from 'react'
 import logo from '../assets/img/logo.png';
 import busqueda from '../assets/img/busqueda.png'; 
 import mapa from '../assets/img/marcador-de-mapa.png';
+import dolar from '../assets/img/dolar.png'
+import sonreir from '../assets/img/sonreir.png'
+import caferosa from '../assets/img/caferosa.jpg'
+import cafeverde from '../assets/img/cafeverde.jpg'
+import cafemora from '../assets/img/cafemora.jpg'
+import cafe from '../assets/img/cafe.jpg'
 import'../assets/App.css';
 import Nosotros from './Nosotros';  
 
 
 function Form() {
-    const history=useHistory();
-
-       const cambioRuta=()=>history.push(Nosotros)
+   
   return (
       <body>
     <header>
@@ -33,7 +37,7 @@ function Form() {
         <div className="list"><li>|</li></div>
         <div className="listI"><a href="" className="a">Categorias</a></div>
         <div className="list"><li>|</li></div>
-        <button type='button' onClick={cambioRuta}> nosotros</button>
+      
 
     </div>
     <main>
@@ -51,14 +55,14 @@ function Form() {
         <div><li className="als">|</li></div>
 
         <div className="hijo">
-            <img className="imagene"  src="/img/dolar.png"/>
+            <img className="imagene"  src={dolar}/>
             <p className="parrafo"> Todos los medios de pago</p>
         </div>
 
         <div><li className="alss">|</li></div>
 
         <div className="hijo">
-            <img className="imagenn" src="/img/sonreir.png"/>
+            <img className="imagenn" src={sonreir}/>
             <p className="parrafo">Cliente satisfecho</p>
         </div>
     </section>
@@ -67,22 +71,22 @@ function Form() {
     <h3>Productos destacados</h3>
         <div className="destacados">
         <a className="as"  href="">
-            <img className="coffi" src="/img/caferosa.jpg"/>
+            <img className="coffi" src={caferosa}/>
             <p className="cafep">Cafe fresa</p>
             <p className="precio">$7.000</p>
         </a>
         <a className="as" href="">
-            <img className="coffi" src="/img/cafemora.jpg"/>
+            <img className="coffi" src={cafemora}/>
             <p className="cafep">Cafe mora</p>
             <p className="precio" >$6.700</p>
         </a>
         <a className="as"  href="">
-            <img className="coffi" src="/img/cafeverde.jpg"/>
+            <img className="coffi" src={cafeverde}/>
             <p className="cafep">Cafe lite</p>
             <p className="precio" >$6.500</p>
         </a>
         <a className="as"  href="">
-            <img className="coffi" src="/img/cafe.jpg"/>
+            <img className="coffi" src={cafe}/>
             <p className="cafep">Cafe con chocolate</p>
             <p className="precio">$5.000</p>
         </a>
