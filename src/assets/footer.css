@@ -1,0 +1,41 @@
+footer{
+    background: rgb(241, 161, 205);
+    color: rgb(87, 30, 12);
+    display: grid;
+    grid-template-columns: auto auto ;
+    height: 150px;
+    margin-top: 2%;
+    
+}
+
+.futo{
+    display: grid;
+    grid-template-columns: 26% 3% 26% 3% 26%;
+}
+
+.derechos{
+    font-family: arial;
+    color:rgb(87, 30, 12);
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+    margin-left: 17%;
+}
+
+.rayis{
+   text-decoration: none;
+   font-family: arial;
+    color:rgb(87, 30, 12);
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+}
+
+.raya{
+   font-family: arial;
+    color:rgb(87, 30, 12);
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
